@@ -88,8 +88,7 @@ article{
             grid-template-columns: repeat(6, auto);
     }
     aside{
-        grid-column: auto;
-        color: #2ecc2e;
+        display: none;
     }
 }
 .dark{
