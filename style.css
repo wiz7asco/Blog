@@ -5,13 +5,11 @@
 }
 body{
     background-color: #DDDDDD;
-    /* background-color: #F1F1F1; */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 18px;
 }
 header{
-    /* background-color: #2ecc71; */
     background-color: #2ecc2e;
     color: white;
     grid-area: header;
@@ -195,19 +193,22 @@ article{
   gap: 10px;
   list-style: none;
   padding: 0;
-  justify-content: center; /* or flex-start / flex-end */
+  justify-content: center;
 }
-.social ul li{
-display: inline-block;
-margin: 0 8px;
+footer ul{
+display: flex;
+justify-content: center;
+list-style: none;
+padding: 20px;
+gap: 10px;
 }
-.social li a {
+footer li a {
   font-size: 24px;
-  color: #333;
+  color: #000;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.social li a:hover {
-  color: #007bff; /* or your brand color */
+footer li a:hover {
+  color: #007bff;
 }
