@@ -189,3 +189,21 @@ article{
 .menu-btn.active span:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -5px);
 }
+.social {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  justify-content: center; /* or flex-start / flex-end */
+}
+
+.social li a {
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social li a:hover {
+  color: #007bff; /* or your brand color */
+}
