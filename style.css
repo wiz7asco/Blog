@@ -190,7 +190,7 @@ article{
     transform: rotate(45deg) translate(-5px, -5px);
 }
 .social {
-  display: flex;
+  display: inline-block;
   gap: 10px;
   list-style: none;
   padding: 0;
