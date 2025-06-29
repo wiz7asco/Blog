@@ -10,7 +10,9 @@ body{
     font-size: 18px;
 }
 header{
-    background-color: #2ecc2e;
+  position: fixed;
+  width: 100%;
+    background-color: #007bff;
     color: white;
     grid-area: header;
     padding: 20px;
@@ -46,25 +48,21 @@ header nav ul li a:hover{
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header header header header header header header header header header header header"
-    "main main main main main main main main main main main aside"
+    "main main main main main main main main main main main main"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
     margin: 0;
     gap: 5px;
 }
-aside{
-    margin-top: 105px;
-    align-content: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 6px;
-    border-radius: 6px;
-    text-align: center;
-    background-color: #FFFFFF;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
+.intro{
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 main{
+  margin: 70px 0 0;
     grid-area: main;
-    background-color: #DDDDDD;
+  /*  background-color: #DDDDDD;*/
+    background-color: #FFFFFF;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
     padding: 5px;
 }
 footer{
@@ -73,21 +71,9 @@ footer{
     color: black;
 }
 article{
-    background-color: #FFFFFF;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.1);
     padding: 17px;
     text-align: start;
     border-radius: 20px;
-}
-@media (max-width:600px){
-    .container {
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(6, auto);
-    }
-    aside{
-        display: none;
-    }
 }
 .dark{
     background-color: #333;
@@ -97,7 +83,7 @@ article{
     position: absolute;
     right: 15px;
     top: 80px;
-    background-color: #2ecc2e;
+    background-color: #007bff;
     color: white;
     padding: 6px;
     border-radius: 6px;
@@ -110,7 +96,7 @@ article{
     position: fixed;
     top: 50px;
     right: 0;
-    background-color: #2ecc2e;
+    background-color: #007bff;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -211,4 +197,24 @@ footer li a {
 
 footer li a:hover {
   color: #007bff;
+}
+h2,h3{
+  color: #007bff;
+}
+img{
+  width: 100%;
+  display: none;
+}
+@media (max-width:770px){
+    .container {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+    }
+    aside{
+        display: none;
+    }
+    img{
+      display: block;
+    }
 }
